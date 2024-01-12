@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cartItem {
+  width: 100%;
+}
+.cartItem_img {
+  width: 50px;
+  aspect-ratio: 1/1;
+}
+
+.nav-item {
+  cursor: pointer;
+  padding-top: 5px;
+  position: relative;
+}
+.nav-item_counter {
+  position: absolute;
+  top: 3px;
+  right: -5px;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+}
+.nav-item ion-icon {
+  font-size: 1.5rem;
+}
+.nav-item:hover {
+  color: #0B5ED7;
+}
+
+.card {
+  padding: 0;
+  width: 18rem;
+  transition: all 0.3s ease-in-out;
+}
+.card img {
+  width: 100%;
+  aspect-ratio: 1/1.1;
+}
+.card:hover {
+  transform: scale(1.05);
+}/*# sourceMappingURL=index.css.map */

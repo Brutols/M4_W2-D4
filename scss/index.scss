@@ -1,0 +1,44 @@
+@import "resets";
+@import "mixins";
+
+.cartItem {
+    width: 100%;
+    &_img {
+        width: 50px;
+        aspect-ratio: 1/1;
+    }
+}
+
+.nav-item {
+    cursor: pointer;
+    padding-top: 5px;
+    position: relative;
+    &_counter {
+        position: absolute;
+        top: 3px;
+        right: -5px;
+        width: 10px;
+        height: 10px;
+        background-color: red;
+        border-radius: 50%;
+    }
+    ion-icon {
+        font-size: 1.5rem;
+    }
+    &:hover {
+        color: #0B5ED7;
+    }
+}
+
+.card {
+    padding: 0;
+    width: 18rem;
+    @include ease-in-out;
+    img {
+        width: 100%;
+        aspect-ratio: 1/1.1;
+    }
+    &:hover {
+        transform: scale(1.05);
+    }
+}
