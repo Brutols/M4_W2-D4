@@ -13,6 +13,17 @@
   width: 50px;
   aspect-ratio: 1/1;
 }
+.cartItem_remove {
+  padding-top: 3px;
+}
+.cartItem_remove ion-icon {
+  font-size: 20px;
+  text-align: center;
+}
+.cartItem_remove:hover {
+  cursor: pointer;
+  color: #0B5ED7;
+}
 
 .nav-item {
   cursor: pointer;
@@ -23,10 +34,14 @@
   position: absolute;
   top: 3px;
   right: -5px;
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   background-color: red;
   border-radius: 50%;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
 }
 .nav-item ion-icon {
   font-size: 1.5rem;
@@ -46,4 +61,13 @@
 }
 .card:hover {
   transform: scale(1.05);
+}
+.card a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.card a ion-icon {
+  font-size: 20px;
 }/*# sourceMappingURL=index.css.map */

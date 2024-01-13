@@ -7,6 +7,17 @@
         width: 50px;
         aspect-ratio: 1/1;
     }
+    &_remove {
+        padding-top: 3px;
+        ion-icon {
+            font-size: 20px;
+            text-align: center;
+        }
+        &:hover {
+            cursor: pointer;
+            color: #0B5ED7;
+        }
+    }
 }
 
 .nav-item {
@@ -17,10 +28,14 @@
         position: absolute;
         top: 3px;
         right: -5px;
-        width: 10px;
-        height: 10px;
+        width: 15px;
+        height: 15px;
         background-color: red;
         border-radius: 50%;
+        color: white;
+        font-size: 10px;
+        font-weight: bold;
+        text-align: center;
     }
     ion-icon {
         font-size: 1.5rem;
@@ -40,5 +55,14 @@
     }
     &:hover {
         transform: scale(1.05);
+    }
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        ion-icon {
+            font-size: 20px;
+        }
     }
 }
