@@ -2,67 +2,67 @@
 @import "mixins";
 
 .cartItem {
-    width: 100%;
-    &_img {
-        width: 50px;
-        aspect-ratio: 1/1;
+  width: 100%;
+  &_img {
+    width: 50px;
+    aspect-ratio: 1/1;
+  }
+  &_remove {
+    padding-top: 3px;
+    ion-icon {
+      font-size: 20px;
+      text-align: center;
     }
-    &_remove {
-        padding-top: 3px;
-        ion-icon {
-            font-size: 20px;
-            text-align: center;
-        }
-        &:hover {
-            cursor: pointer;
-            color: #0B5ED7;
-        }
+    &:hover {
+      cursor: pointer;
+      color: #0b5ed7;
     }
+  }
 }
 
 .nav-item {
-    cursor: pointer;
-    padding-top: 5px;
-    position: relative;
-    &_counter {
-        position: absolute;
-        top: 3px;
-        right: -5px;
-        width: 15px;
-        height: 15px;
-        background-color: red;
-        border-radius: 50%;
-        color: white;
-        font-size: 10px;
-        font-weight: bold;
-        text-align: center;
-    }
-    ion-icon {
-        font-size: 1.5rem;
-    }
-    &:hover {
-        color: #0B5ED7;
-    }
+  cursor: pointer;
+  padding-top: 5px;
+  position: relative;
+  &_counter {
+    position: absolute;
+    top: 3px;
+    right: -5px;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+  ion-icon {
+    font-size: 1.5rem;
+  }
+  &:hover {
+    color: #0b5ed7;
+  }
 }
 
 .card {
-    padding: 0;
-    width: 18rem;
-    @include ease-in-out;
-    img {
-        width: 100%;
-        aspect-ratio: 1/1.1;
+  padding: 0;
+  width: 18rem;
+  @include ease-in-out;
+  img {
+    width: 100%;
+    aspect-ratio: 1/1.1;
+  }
+  &:hover {
+    transform: scale(1.05);
+  }
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    ion-icon {
+      font-size: 20px;
     }
-    &:hover {
-        transform: scale(1.05);
-    }
-    a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 5px;
-        ion-icon {
-            font-size: 20px;
-        }
-    }
+  }
 }

@@ -13,7 +13,7 @@ export const cardAppendChild = (src, title, desc, price, id) => {
 
   const cardBody = document.createElement("div");
   cardBody.classList.add("card-body");
-  cardBody.setAttribute("id", id)
+  cardBody.setAttribute("id", id);
 
   cardWrapper.appendChild(cardBody);
 
@@ -44,7 +44,7 @@ export const cardAppendChild = (src, title, desc, price, id) => {
 export const createCartItem = (src, title, price, id) => {
   const cartItem = document.createElement("div");
   cartItem.classList.add("cartItem", "d-flex", "gap-3");
-  cartItem.setAttribute("id", id)
+  cartItem.setAttribute("id", id);
 
   const cartImg = document.createElement("img");
   cartImg.classList.add("cartItem_img");
@@ -60,15 +60,15 @@ export const createCartItem = (src, title, price, id) => {
 
   const cartPrice = document.createElement("p");
   cartPrice.classList.add("cartItem_price");
-  cartPrice.textContent = `$${price}`
+  cartPrice.textContent = `$${price}`;
 
   cartItem.appendChild(cartPrice);
 
-  const cartRemove = document.createElement("div")
-  cartRemove.classList.add("cartItem_remove")
-  cartRemove.innerHTML = "<ion-icon name='close-sharp'></ion-icon>"
+  const cartRemove = document.createElement("div");
+  cartRemove.classList.add("cartItem_remove");
+  cartRemove.innerHTML = "<ion-icon name='close-sharp'></ion-icon>";
 
-  cartItem.appendChild(cartRemove)
+  cartItem.appendChild(cartRemove);
 
   modalBody.appendChild(cartItem);
 };
