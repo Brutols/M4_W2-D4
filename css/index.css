@@ -21,6 +21,8 @@
   filter: blur(5px);
   background-color: grey;
   background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .detail {
@@ -105,12 +107,18 @@
 .card:hover {
   transform: scale(1.05);
 }
-.card a {
+.card-title_link {
+  text-decoration: none;
+}
+.card-title_link:hover {
+  text-decoration: underline;
+}
+.card .btn {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5px;
 }
-.card a ion-icon {
+.card .btn ion-icon {
   font-size: 20px;
 }/*# sourceMappingURL=index.css.map */

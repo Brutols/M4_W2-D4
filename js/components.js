@@ -39,7 +39,7 @@ export const cardAppendChild = (src, title, desc, price, id) => {
   const cardBtn = document.createElement("a");
   cardBtn.classList.add("btn", "btn-primary", "text-truncate", "card_btn");
   cardBtn.setAttribute("href", "#");
-  cardBtn.textContent = `${price}`;
+  cardBtn.textContent = `$${price}`;
 
   cardBtn.innerHTML += "<ion-icon name='cart-sharp'></ion-icon>";
 
@@ -107,13 +107,13 @@ export const createBookDetail = (src, title, desc, price) => {
 
   const detailDesc = document.createElement("h2")
   detailDesc.classList.add("detail_desc")
-  detailDesc.textContent = desc
+  detailDesc.textContent = `- ${desc} -`
 
   detailTextContainer.appendChild(detailDesc)
 
   const detailPrice = document.createElement("h4")
   detailPrice.classList.add("detail_price")
-  detailPrice.textContent = price
+  detailPrice.textContent = `$${price}`
 
   detailTextContainer.appendChild(detailPrice)
 

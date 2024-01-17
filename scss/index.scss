@@ -57,7 +57,13 @@
   &:hover {
     transform: scale(1.05);
   }
-  a {
+  &-title_link {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .btn {
     display: flex;
     align-items: center;
     justify-content: center;

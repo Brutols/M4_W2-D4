@@ -11,7 +11,9 @@
         background: inherit;
         filter: blur(5px);
         background-color: grey;
-        background-blend-mode: multiply;    
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 
